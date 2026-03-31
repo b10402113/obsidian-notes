@@ -55,4 +55,4 @@
 
 ## 關鍵字
 
-[[Monolithic]], [[Microservice]], [[Single Unit Deployment]], [[Self-Contained Service]], [[Database per Service]], [[Fault Tolerance]], [[Feature Isolation]]
+[[keywords/Monolithic]], [[Microservice]], [[Single Unit Deployment]], [[Self-Contained Service]], [[Database per Service]], [[Fault Tolerance]], [[Feature Isolation]]
