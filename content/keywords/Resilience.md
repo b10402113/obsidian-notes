@@ -1,7 +1,7 @@
-# Resilience
+## Resilience
 
-韌性。當系統中其他 Service 全部崩潰時，某個獨立的 Service 仍然可以正常運作的能力。[[Microservice]] 的 [[Self-contained]] 設計讓故障範圍被嚴格隔離，大幅提升系統的 Resilience。
+韌性——微服務架構中系统在部分 Service 故障時仍能正常運作的能力，零依賴是提升韌性的關鍵。
 
 ## Reference
 
-[[1_如何尋求幫助與微服務基礎概念.md]]
+[[8_非同步通訊的優缺點分析.md]]

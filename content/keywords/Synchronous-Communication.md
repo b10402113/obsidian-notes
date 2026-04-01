@@ -1,7 +1,7 @@
-# Synchronous Communication
+## Synchronous Communication
 
-同步通訊。[[Microservice Communication]] 的第一種形式：一個 Service 直接向另一個 Service 發出 [[Direct Request]] 來獲取資料，雙方需要同時在線。容易理解但會引入 [[Dependency]]，導致 [[Availability]] 下降與 [[Latency]] 不可預測。
+同步通訊——Service 透過直接發送 HTTP 請求給其他 Service 並等待回覆的通訊方式，概念直觀但會建立依賴鏈。
 
 ## Reference
 
-[[3_微服務中的資料管理挑戰.md]] | [[5_服務間的同步通訊方式.md]]
+[[5_Service_間的同步通訊.md]]

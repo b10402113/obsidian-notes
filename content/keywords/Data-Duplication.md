@@ -1,7 +1,7 @@
-# Data Duplication
+## Data Duplication
 
-資料重複儲存。每個 Service 維護自己的資料副本（如 [[Database per Service]] 中所述），代價是同一份資料在多個地方重複儲存。但老師強調：現代雲端儲存成本極低，Storage 幾乎免費，[[Data Duplication]] 不應被視為缺點。
+資料重複——事件驅動架構下同一份資料會出現在多個 Service 的資料庫中，其儲存成本在現代雲端環境下幾乎可以忽略不計。
 
 ## Reference
 
-[[8_非同步通訊的優勢與資料複製策略.md]]
+[[8_非同步通訊的優缺點分析.md]]

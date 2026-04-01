@@ -1,7 +1,7 @@
-# Event-Driven
+## Event-driven
 
-事件驅動架構。一種以 [[Event]] 為中心進行溝通和協調的系統設計模式，Service 透過 [[Emit]] 和 [[Listen]] 事件來互動，而非直接呼叫彼此。
+事件驅動——Service 在完成操作時主動發出事件通知，讓感興趣的 Service據此同步資料。
 
 ## Reference
 
-[[7_事件匯流排的非同步通訊方式.md]]
+[[7_儲存資料的另一種瘋狂方式.md]]
