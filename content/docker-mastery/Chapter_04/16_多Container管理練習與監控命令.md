@@ -72,6 +72,8 @@ docker container inspect <container_name>
 
 > 這些配置資訊會隨著課程進度逐漸理解其含義。
 
+![[Pasted image 20260408195038.png|700]]
+
 ---
 
 ### 即時監控資源：`stats`

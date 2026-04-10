@@ -12,12 +12,12 @@
 
 這是兩個完全不同的產品：
 
-| Docker Desktop | Docker Engine |
-|----------------|---------------|
-| 本地開發用 | Server 部署用 |
-| 包含 GUI Dashboard | 純 CLI |
-| 包含許多額外工具 | 單一 daemon（dockerd） |
-| 授權軟體 | 開源軟體（Apache License） |
+| Docker Desktop   | Docker Engine        |
+| ---------------- | -------------------- |
+| 本地開發用            | Server 部署用           |
+| 包含 GUI Dashboard | 純 CLI                |
+| 包含許多額外工具         | 單一 daemon（dockerd）   |
+| 授權軟體             | 開源軟體（Apache License） |
 
 **Docker Engine** 是一個單一 binary（`dockerd`），可以在任何 Linux Server 上運行，只要該系統有 Linux Kernel。
 

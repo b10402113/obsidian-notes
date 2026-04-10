@@ -47,11 +47,11 @@ docker version
 
 Client 與 Engine 之間透過以下協定通訊：
 
-| 協定 | 使用場景 |
-|------|---------|
-| **Socket** | 預設方式，本地通訊 |
-| **TCP** | 遠端連線 |
-| **TLS** | 加密的遠端連線 |
+| 協定             | 使用場景      |
+| -------------- | --------- |
+| **Socket**     | 預設方式，本地通訊 |
+| **TCP**        | 遠端連線      |
+| **TLS**        | 加密的遠端連線   |
 | **SSH Tunnel** | 透過 SSH 連線 |
 
 > Docker CLI（`docker` 指令）只是 Client，實際執行 Container 的是背景的 Docker Engine。
@@ -127,6 +127,7 @@ docker run -d -p 8801:80 httpd
 > 如果嘗試使用已被佔用的 Port，會得到錯誤：`port is already in use`
 
 #### 隔離機制說明
+![[Pasted image 20260408084516.png|700]]
 
 ```
 ┌─────────────────────────────────────────────────┐

@@ -9,7 +9,7 @@
 ### 為什麼不需要 SSH？
 
 很多初學者會問：「如何 SSH 進 Container？」實際上我們**不需要在 Container 內安裝 SSH Server**。Docker 提供了更直接的方式讓我們進入 Container 操作，既安全又方便。
-
+![[Pasted image 20260408195831.png|700]]
 ---
 
 ### 使用 `docker container run -it` 取得互動式 Shell
@@ -101,6 +101,7 @@ docker container run -it alpine sh
 > 如果嘗試執行 `bash` 會得到 "executable file not found" 錯誤，因為 Alpine 預設沒有 bash。
 
 若需要 bash，可用 `apk add bash` 安裝。
+![[Pasted image 20260408201209.png|700]]
 
 ---
 

@@ -1,4 +1,5 @@
 # 啟動與管理 Nginx Container
+![[Pasted image 20260408191651.png|700]]
 
 ## 📝 課程概述
 
@@ -7,6 +8,7 @@
 ## 核心觀念與實作解析
 
 ### Image 與 Container 的差異
+![[Pasted image 20260408191714.png|700]]
 
 在開始操作之前，我們必須理解這兩個核心概念：
 
@@ -30,6 +32,7 @@ docker container run -p 80:80 nginx
 這個命令觸發了一連串的背景作業：
 
 **Docker 在背景做了什麼？**
+![[Pasted image 20260408191942.png|700]]
 
 1. **尋找 Image**：在本機 Image Cache 中尋找 `nginx`
 2. **下載 Image**：若本機沒有，從 Docker Hub 下載最新版本（`latest` tag）
@@ -77,7 +80,7 @@ docker container ls -a
 - 執行狀態
 - Port 映射
 - 名稱
-
+![[Pasted image 20260408192105.png|700]]
 ---
 
 ### 查看 Container 日誌與程序

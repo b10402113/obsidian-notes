@@ -9,7 +9,7 @@
 ### 確認 Docker 環境正確運行
 
 在開始學習 Container 操作之前，我們必須確保 Docker 已正確安裝並能正常運作。這部分只需要兩個關鍵命令：
-
+![[Pasted image 20260408191253.png|700]]
 **1. `docker version` — 驗證 Client 與 Server 通訊**
 
 這個命令會回傳兩個部分的版本資訊：
@@ -23,7 +23,7 @@
 如果遇到錯誤，可能的原因包括：
 - 在 Linux 上需要加上 `sudo`
 - Docker 本身尚未啟動
-
+![[Pasted image 20260408191431.png|700]]
 **2. `docker info` — 取得詳細配置資訊**
 
 這個命令會回傳更豐富的引擎配置資訊，包括：
@@ -52,6 +52,8 @@ docker <management-command> <subcommand> [options]
 例如：`docker container run`
 
 > **為什麼要改？** Docker 發現命令數量愈來愈多，原本的扁平式結構變得難以管理，因此引入了「管理命令」的分層架構。
+
+![[Pasted image 20260408191605.png|700]]
 
 ---
 

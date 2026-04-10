@@ -11,9 +11,8 @@
 很多人會將 Container 與 Virtual Machine（VM）做比較，但這個比喻其實會造成誤解。**Container 不是 VM，Container 只是在 Host OS 上運行的一個程序**，只是這個程序受到了額外的限制與隔離。
 
 > Container 是一個受限的程序（Restricted Process），而不是一個完整的作業系統實例。
-
 ---
-
+![[Pasted image 20260408192724.png|700]]
 ### 實驗：觀察 Container 程序
 
 讓我們透過實際操作來驗證這個概念。
