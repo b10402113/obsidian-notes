@@ -57,6 +57,7 @@ git diff HEAD HEAD~1
 2. 修改 `fleetwoodmac.txt`：將 `Stevie Nicks` 改為 `Stevie Chicks`，**不執行 `git add`**（**未 Staged**）
 
 **實作指令與預期輸出**：
+## 🔥重點
 
 | 指令 | 顯示內容 | 原因 |
 |------|----------|------|

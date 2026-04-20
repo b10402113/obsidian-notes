@@ -15,13 +15,13 @@
 ### `git diff` 能比較什麼？
 
 `git diff` 這個單一指令可以應對多種比較場景：
-
+![[Pasted image 20260413195201.png|700]]
 - **Working Directory vs. Staging Area**：哪些修改還沒 staging？
 - **Staging Area vs. Last Commit**：即將被 commit 的內容是什麼？
 - **兩個 Branch 之間**：這個 Feature Branch 和主線有什麼差異？
 - **兩個 Commit 之間**：某次重構究竟改動了哪些檔案？
 - **本地 vs. Remote**：還沒 pull 的變更有哪些？
-
+![[Pasted image 20260413195028.png|700]]
 ### 本節學習重點
 
 在這整個章節中，**最關鍵的是理解如何閱讀 `git diff` 的輸出格式**。講師特別強調：
@@ -33,6 +33,7 @@
 ### 為什麼 `git diff` 輸出看起來很複雜？
 
 當你運行 `git diff` 時，Git 會產生一段類似這樣的輸出：
+![[Pasted image 20260413195237.png|700]]
 
 ```
 diff --git a/index.html b/index.html

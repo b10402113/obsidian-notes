@@ -75,11 +75,11 @@ git diff --cached
 
 ### 實用情境對照表
 
-| 指令 | 比較的兩端 | 回答的問題 |
-|------|-----------|------------|
-| `git diff` | Staging Area vs. Working Directory | 有什麼變化還沒 staging？ |
-| `git diff HEAD` | HEAD vs. Working Directory（含 Staging）| 自上次 Commit 後，所有變化是什麼？ |
-| `git diff --staged` | HEAD vs. Staging Area | 準備要 commit 的內容是什麼？ |
+| 指令                  | 比較的兩端                                 | 回答的問題                           |
+| ------------------- | ------------------------------------- | ------------------------------- |
+| `git diff`          | Staging Area vs. Working Directory    | 有什麼變化還沒 staging？Unstage changes |
+| `git diff HEAD`     | HEAD vs. Working Directory（含 Staging） | 自上次 Commit 後，所有變化是什麼？           |
+| `git diff --staged` | HEAD vs. Staging Area                 | 準備要 commit 的內容是什麼？              |
 
 ### 新增未追蹤檔案時的 `git diff HEAD`
 

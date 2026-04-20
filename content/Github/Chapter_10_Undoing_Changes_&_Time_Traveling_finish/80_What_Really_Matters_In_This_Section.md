@@ -25,14 +25,15 @@
 講師的建議是：不需要把每個指令的每個選項都背起來，但必須理解**何時該用哪一個**，以及**它們對 Commit 歷史和 Working Directory 的影響**。
 
 ### Detached HEAD：進入歷史的門票
-
+![[Pasted image 20260416203516.png|700]]
 當你執行 `git checkout <commit-hash>` 而非 `git checkout <branch>` 時，Git 會進入所謂的 **Detached HEAD** 狀態。這不是錯誤，是一個特殊的「觀看模式」：
 
 - **正常狀態**：HEAD 指向一個 Branch Reference（分支引用），Branch Reference 再指向某個 Commit
 - **Detached HEAD**：HEAD 直接指向一個 Commit，不再綁定任何分支
 
 這種狀態下你可以自由地「觀看」歷史，但**不應該直接在上面做 Commit**（除非你打算之後建立新分支）。離開的方式：切換回任意分支即可。
-
+![[Pasted image 20260416203810.png|700]]
+![[Pasted image 20260416203822.png|700]]
 ### Reset vs. Revert：協作場景下的關鍵抉擇
 
 這是本章最重要的觀念對比：

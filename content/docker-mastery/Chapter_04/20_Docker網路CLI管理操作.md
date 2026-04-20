@@ -105,8 +105,10 @@ docker container inspect webhost
 ---
 
 ### 自訂網路的關鍵優勢：內建 DNS 解析
+![[Pasted image 20260414194344.png|700]]
 
 **這是自訂網路與預設 bridge 網路的最大差異**。
+![[Pasted image 20260414194436.png|700]]
 
 在自訂網路中，Container 可以**直接使用名稱互相通訊**：
 
@@ -126,12 +128,14 @@ docker container exec -it my_nginx ping new_nginx
 - 可用 `--link` 手動建立連結（但不建議）
 
 > **最佳實踐**：為每個應用建立專屬的自訂網路，而非使用預設 bridge。
-
+> Compose 會自動新建網路
+![[Pasted image 20260414194752.png|700]]
 ---
 
 ### 安全優勢
 
 使用虛擬網路隔離不同應用：
+![[Pasted image 20260414194138.png|700]] 
 
 - 只有使用 `-p` 的 Container 會暴露到外部
 - 同一虛擬網路內的 Container 可自由通訊
@@ -140,7 +144,7 @@ docker container exec -it my_nginx ping new_nginx
 > 這比傳統 VM 環境更容易管理網路安全邊界。
 
 ---
-
+![[Pasted image 20260414194204.png|700]]
 ## 💡 重點摘要
 
 - **自訂網路提供內建 DNS，Container 可用名稱互相通訊；預設 bridge 沒有此功能。**

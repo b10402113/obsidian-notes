@@ -59,9 +59,9 @@
 
 但在 Container 與 Auto-scaling 的世界裡，Persistent Data 變成了獨特的挑戰。Docker 提供了兩種解決方案：
 
-| 方案         | 說明                                              |
-| ------------ | ------------------------------------------------- |
-| Data Volumes | 在 Container 的 UFS 之外建立特殊位置存放資料      |
+| 方案           | 說明                                   |
+| ------------ | ------------------------------------ |
+| Data Volumes | 在 Container 的 UFS 之外建立特殊位置存放資料       |
 | Bind Mounts  | 將 Host 的目錄或檔案映射（Mount）進 Container 內部 |
 
 無論哪種方式，Container 內部看起來都只是一個普通的本地檔案路徑。

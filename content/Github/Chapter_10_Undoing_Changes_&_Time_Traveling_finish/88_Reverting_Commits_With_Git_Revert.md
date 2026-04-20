@@ -23,7 +23,7 @@ git reset <commit-hash>
 git reset abc1234
 ```
 
-**只移動 Branch Pointer，不改變 Working Directory**。被刪除的 Commit 中的**變更仍然留在 Working Directory 中**，你可以自由決定如何處理它們。
+**只移動 Branch Pointer，不改變 Working Directory**。**被刪除的 Commit 中的變更仍然留在 Working Directory 中**，你可以自由決定如何處理它們。
 
 **實作情境**：
 - 在 `master` 上連續做了兩次錯誤的 Commit：「mistake commit」和「another bad commit」
@@ -36,7 +36,8 @@ git reset abc1234
 git reset --hard abc1234
 ```
 
-**Branch Pointer 向後移動，且 Working Directory 也被「倒帶」到那個 Commit 的狀態**。所有被刪除 Commit 的變更**全部消失，無法恢復**。
+**Branch Pointer 向後移動，且 Working Directory 也被「倒帶」到那個 Commit 的狀態**。
+> 所有被刪除 Commit 的變更**全部消失，無法恢復**。
 
 **實作情境**：
 - 執行 `git reset --hard 3rd-commit-hash` 後，`master` 分支上最近兩個 Commit 完全消失
@@ -44,6 +45,7 @@ git reset --hard abc1234
 - 這個操作是**不可逆**的，除非你之前已經把內容 stash 或 copy 了
 
 ### `git revert`：安全的新增反向 Commit
+![[Pasted image 20260416210751.png|700]]
 
 ```bash
 git revert <commit-hash>
@@ -89,8 +91,9 @@ Revert（安全新增）：
 - 但同事 A 和同事 B **已經拿到了 Commit 3**，並且已經基於它做了後續開發
 - 當你 Push，並且同事 Pull 時，Git 會遇到嚴重的歷史衝突——**你們的歷史已經完全不同了**
 - 這種情況非常難以調和，會造成團隊的困擾
-
+![[Pasted image 20260416210816.png|700]]
 **如果你用 `revert`**：
+![[Pasted image 20260416210832.png|700]]
 - 你新增了一個「撤銷 Commit 3」的 Commit
 - 這個新 Commit 可以正常 Push
 - 同事 Pull 時，Git 只需要「把這個新 Commit 套用到他們的歷史上」，過程簡單且安全
@@ -100,6 +103,7 @@ Revert（安全新增）：
 > - **還沒 Push 的錯誤 Commit**：`git reset` 很安全，因為只有你自己知道
 > - **已經 Push 並被其他人取得的 Commit**：**一定要用 `git revert`**
 
+![[Pasted image 20260416211101.png|700]]
 ### Revert 的衝突處理
 
 `git revert` 和 Merge 一樣，都可能遇到衝突。當 Git 無法自動判斷「要保留什麼」時：
