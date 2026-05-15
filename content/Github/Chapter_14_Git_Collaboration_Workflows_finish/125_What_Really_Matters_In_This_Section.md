@@ -12,12 +12,12 @@
 
 ### 四大協作工作流程的地圖
 
-| 工作流程 | 核心概念 | 適用情境 |
-|---------|---------|---------|
-| **Centralized Workflow** | 全體成員在單一 branch（main/master）上工作 | 小型 hobby 專案，**不建議團隊使用** |
-| **Feature Branch Workflow** | 所有人離開 main branch，在各自的 feature branch 上作業 | 小型到中型團隊協作 |
-| **Pull Request 流程** | 透過 PR 提交、審查、討論後再合併 | 中型到大型團隊，有程式碼審查需求 |
-| **Fork and Clone Workflow** | 每個Contributor 擁有自己的 fork，用 PR 與原專案同步 | 大型開源專案（React、VS Code 等） |
+| 工作流程                        | 核心概念                                      | 適用情境                    |
+| --------------------------- | ----------------------------------------- | ----------------------- |
+| **Centralized Workflow**    | 全體成員在單一 branch（main/master）上工作            | 小型 hobby 專案，**不建議團隊使用** |
+| **Feature Branch Workflow** | 所有人離開 main branch，在各自的 feature branch 上作業 | 小型到中型團隊協作               |
+| **Pull Request 流程**         | 透過 PR 提交、審查、討論後再合併                        | 中型到大型團隊，有程式碼審查需求        |
+| **Fork and Clone Workflow** | 每個Contributor 擁有自己的 fork，用 PR 與原專案同步      | 大型開源專案（React、VS Code 等） |
 
 ### 章節中每個環節的價值定位
 

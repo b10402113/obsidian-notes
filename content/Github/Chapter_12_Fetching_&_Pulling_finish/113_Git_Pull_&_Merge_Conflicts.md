@@ -38,10 +38,10 @@ git pull
 
 ### Fetch + Merge vs. 直接 Pull
 
-| 操作 | Remote Tracking Branch 更新 | Working Directory 更新 | 風險 |
-|------|------------------------|---------------------|------|
-| `git fetch` | ✅ | ❌ | 安全 |
-| `git pull` | ✅ | ✅（自動 Merge）| 可能有衝突 |
+| 操作          | Remote Tracking Branch 更新 | Working Directory 更新 | 風險    |
+| ----------- | ------------------------- | -------------------- | ----- |
+| `git fetch` | ✅                         | ❌                    | 安全    |
+| `git pull`  | ✅                         | ✅（自動 Merge）          | 可能有衝突 |
 
 ### Merge Conflict 處理流程
 
